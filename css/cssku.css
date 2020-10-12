@@ -1,0 +1,5 @@
+.backgroundJumbo {
+    background-color: green;
+    background-image: linear-gradient(to bottom
+    right, green, yellow);
+}
