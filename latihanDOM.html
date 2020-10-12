@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="gantiTulisan(this)">Latihan DOM</h1>
+    <p id="pesan" onclick="gantiPesan1(this)"></p>
+    <p id="pesan2" onmouseover="mouseLewat(this)" onmouseout="mousePergi(this)"></p>
+
+    <script>
+        //pemanggilan via document.getElementById
+        document.getElementById("pesan").innerHTML =
+        "<h3>Selamat datang di dunia DOM HTML</h3>";
+
+        //assign document.getElementById ke var
+        var pesanParagraf = document.getElementById("pesan2");
+        pesanParagraf.style.color = "green";
+        pesanParagraf.innerHTML = "Mantap Gan !!!";
+
+        function gantiTulisan(id) {
+            id.innerHTML = "Tadaa ><...";
+        }
+        function gantiPesan1(id) {
+            id.innerHTML = "Anjay di klik :)";
+        }
+        function mouseLewat(id) {
+            id.innerHTML = "dilewatin dong :(";
+        }
+        function mousePergi(x) {
+            x.innerHTML = "Pergi lagi..."
+        }
+    </script>
+</body>
+</html>
